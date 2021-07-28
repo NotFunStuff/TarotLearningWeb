@@ -4,8 +4,9 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Tarot Learning Website</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -14,36 +15,68 @@
 
 <body>
     <header>
+        <div class="bground"></div>
         <p class="header1"> Tarot Learning Website</p>
         <p class="header2"> Learning the way Universe messaging you</p>
-        <nav class="navbar navbar-expand-sm justify-content-center">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Card List</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Flashcard</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Card Spread</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>                 
-            </ul>
-        </nav>
+        <div class="row no-margin">
+            <div class="nav-item col">
+                <a class="nav-link" href="#">Home</a>
+            </div>
+            <div class="nav-item col">
+                <a class="nav-link" href="#">Card List</a>
+            </div>
+            <div class="nav-item col">
+                <a class="nav-link" href="#">Flashcard</a>
+            </div>
+            <div class="nav-item col">
+                <a class="nav-link" href="#">Card Spread</a>
+            </div>
+            <div class="nav-item col">
+                <a class="nav-link" href="#">About</a>
+            </div>
+        </div>
+
     </header>
-    
+    <div class="content row no-margin">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10 main-content">
+            <div class="bground"></div>
+            <h1>Card List</h1>
+            <div class="en">
+                <p>Tarot is a deck of 78 cards, each with its own image, symbol, and story. </p>
+                <p>
+                    The 22 Major Arcana cards represent karmic and spiritual lessons in life. They represent a path to
+                    spiritual self-realization and describe the different stages we encounter as we seek greater meaning
+                    and
+                    understanding. In this way, the Major Arcana cards contain lessons of profound meaning.
+                </p>
+                <p>
+                    The 56 Arcana mini cards reflect the challenges we experience every day. These Tarot cards highlight
+                    the
+                    practical aspects of and can refer to current issues that have a temporary or minor effect in life.
+                </p>
+                <p>
+                    In the Minor Arcana deck, there are 16 Tarot Court cards, each representing 16 different personality
+                    traits that we can choose to express in any situation (character, event, ...) .
+                    There are also 40 numbered cards arranged into 4 Suits – Cups, Pentacles, Swords and Wands – each
+                    with
+                    10 cards, representing different situations we encounter on a daily basis.
+                </p>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-dark btn-lg card-list-btn">Major Arcana Card List</button>
+                    <button type="button" class="btn btn-dark btn-lg card-list-btn">Minor Arcana Card List</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
     <footer class="site-footer">
         <div class="footer-inner bg-dark">
-            <div class="row">
-                <div class="col-sm-6">
+            <div class="row footer-container">
+                <div class="col-sm-6 text-left-footer">
                     Copyright &copy; 2021 ManyKindOfStuff Co.
                 </div>
-                <div class="col-sm-6 text-right">
+                <div class="col-sm-6 text-right-footer">
                     Designed by
                 </div>
             </div>

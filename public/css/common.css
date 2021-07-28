@@ -1,46 +1,95 @@
-
 body {
     background-image: url("../images/background.jpg");
-    background-size: cover; 
-    background-attachment: fixed;     
+    background-size: cover;
+    background-attachment: fixed;
 }
-.header2,.header1{
+
+.header2,
+.header1 {
     margin: 0px;
+    z-index: 1;
 }
+
 .header2 {
-    font-size: 40px;    
+    font-size: 60px;
     margin-bottom: 0px;
 }
-.nav-item{
+
+.nav-item {
     font-size: 25px;
-    border-left: 0.5px solid #e0f55c; 
-    border-right: 0.5px solid #e0f55c;
+    border: 0.5px solid #e0f55c;
+    padding: 0px;    
 }
-.nav-link{
-    color: #e0f55c;      
+
+.nav-link {
+    color: #cacaca;
     padding: 10px 20px;
     display: inline-block;
+    padding: 0px;
+    
 }
-.nav-link:hover{
+.no-margin{
+    margin: 0px;
+}
+.nav-link:hover {
     color: #acb860;
 }
-header {
-    background: #542656;
-    opacity: 63%;
-    font-family: Garamond ;
-    font-size: 60px; 
-    color: yellow;
+
+header {    
+    font-family: Garamond;
+    font-size: 100px;
+    color: rgb(180, 180, 39);
     text-align: center;
     margin-bottom: 0px;
+    position: relative;
+    z-index: 1;    
 }
-.text-right{
+.bground{
+    background: #542656;
+    opacity: 63%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text-right-footer {
     text-align: right;
 }
-footer{
-    color: white;
+
+.footer-container {
+    margin: unset
 }
 
-
-
-
-
+footer {
+    color: white;
+}
+.main-content{        
+    border-left: 0.5px solid #e0f55c;
+    border-right: 0.5px solid #e0f55c;
+    padding: 0px;
+    position: relative;
+    z-index: 1;  
+}
+h1{
+    color: rgb(180, 180, 39);
+    text-align: center;
+    font-weight: unset;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+.content p {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.card-list-btn{
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
