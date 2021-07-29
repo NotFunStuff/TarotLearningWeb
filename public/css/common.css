@@ -18,7 +18,7 @@ body {
 .nav-item {
     font-size: 25px;
     border: 0.5px solid #e0f55c;
-    padding: 0px;    
+    padding: 0px;
 }
 
 .nav-link {
@@ -26,25 +26,28 @@ body {
     padding: 10px 20px;
     display: inline-block;
     padding: 0px;
-    
+
 }
-.no-margin{
+
+.no-margin {
     margin: 0px;
 }
+
 .nav-link:hover {
     color: #acb860;
 }
 
-header {    
+header {
     font-family: Garamond;
     font-size: 100px;
     color: rgb(180, 180, 39);
     text-align: center;
     margin-bottom: 0px;
     position: relative;
-    z-index: 1;    
+    z-index: 1;
 }
-.bground{
+
+.bground {
     background: #542656;
     opacity: 63%;
     position: absolute;
@@ -65,17 +68,22 @@ header {
     margin: unset
 }
 
+
+
 footer {
     color: white;
 }
-.main-content{        
+
+.main-content {
     border-left: 0.5px solid #e0f55c;
     border-right: 0.5px solid #e0f55c;
     padding: 0px;
     position: relative;
-    z-index: 1;  
+    z-index: 1;
+    text-align: justify;
 }
-h1{
+
+h1 {
     color: rgb(180, 180, 39);
     text-align: center;
     font-weight: unset;
@@ -83,13 +91,33 @@ h1{
     font-family: 'Times New Roman', Times, serif;
     margin-top: 10px;
 }
+
 .content p {
     color: #ffffff;
     font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;    
+    padding: 10px;
+}
+
+.card-list-btn {
+    font-size: 30px;
+    margin: 30px 100px 30px 100px;
+
+}
+
+.special-text {
+    font-size: 35px;
+    color: rgb(180, 180, 39);
+    text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
-.card-list-btn{
-    font-size: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
+
+.small-text{
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px 10px 0px 10px;
+}
+.italic{
+    font-style: italic;
 }

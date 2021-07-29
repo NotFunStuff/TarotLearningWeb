@@ -13,35 +13,13 @@
     <link rel='stylesheet' href='css/common.css'>
 </head>
 
-<body>
-    <header>
-        <div class="bground"></div>
-        <p class="header1"> Tarot Learning Website</p>
-        <p class="header2"> Learning the way Universe messaging you</p>
-        <div class="row no-margin">
-            <div class="nav-item col">
-                <a class="nav-link" href="#">Home</a>
-            </div>
-            <div class="nav-item col">
-                <a class="nav-link" href="#">Card List</a>
-            </div>
-            <div class="nav-item col">
-                <a class="nav-link" href="#">Flashcard</a>
-            </div>
-            <div class="nav-item col">
-                <a class="nav-link" href="#">Card Spread</a>
-            </div>
-            <div class="nav-item col">
-                <a class="nav-link" href="#">About</a>
-            </div>
-        </div>
-
-    </header>
+<body ng-app="myApp">
+    <my-header></my-header>
     <div class="content row no-margin">
         <div class="col-sm-1"></div>
         <div class="col-sm-10 main-content">
             <div class="bground"></div>
-            <h1>Card List</h1>
+            <h1 class="en">Card List</h1>
             <div class="en">
                 <p>Tarot is a deck of 78 cards, each with its own image, symbol, and story. </p>
                 <p>
@@ -51,7 +29,8 @@
                     understanding. In this way, the Major Arcana cards contain lessons of profound meaning.
                 </p>
                 <p>
-                    The 56 Arcana mini cards reflect the challenges we experience every day. These Tarot cards highlight
+                    The 56 Arcana minor cards reflect the challenges we experience every day. These Tarot cards
+                    highlight
                     the
                     practical aspects of and can refer to current issues that have a temporary or minor effect in life.
                 </p>
@@ -66,25 +45,24 @@
                     <button type="button" class="btn btn-dark btn-lg card-list-btn">Major Arcana Card List</button>
                     <button type="button" class="btn btn-dark btn-lg card-list-btn">Minor Arcana Card List</button>
                 </div>
+                <p>Some people may say that Tarot cards are simply pictures. However, what I have discovered from
+                    reading Tarot cards daily over the past time is this:</p>
+                <div class="special-text">Tarot is a tool that helps us analyze things in many different ways
+                    It is the key to understanding others and understanding yourself.</div>
+                <p>Every lesson we come across in life can be found in the 78 Tarot cards. And when we refer to the
+                    Tarot cards, we will be shown the exact lessons that we need to learn and master to live a confident
+                    life. It is the key to help you get into the subconscious and help us answer questions related to
+                    our lives.</p>
+                <span class="small-text italic">Sources: BiddyTarot</span>
             </div>
         </div>
         <div class="col-sm-1"></div>
     </div>
-    <footer class="site-footer">
-        <div class="footer-inner bg-dark">
-            <div class="row footer-container">
-                <div class="col-sm-6 text-left-footer">
-                    Copyright &copy; 2021 ManyKindOfStuff Co.
-                </div>
-                <div class="col-sm-6 text-right-footer">
-                    Designed by
-                </div>
-            </div>
-        </div>
-    </footer>
+    <my-footer></my-footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
 </script>
+<script src="js/common.js"></script>
 
 </html>
