@@ -1,11 +1,21 @@
 var app = angular.module('myApp', []);
-app.directive("myFooter", function () {
-    return {
-        template: '<footer class="site-footer"> <div class="footer-inner bg-dark"> <div class="row footer-container"> <div class="col-sm-6 text-left-footer"> Copyright &copy; 2021 ManyKindOfStuff Co. </div> <div class="col-sm-6 text-right-footer"> Designed by </div> </div> </div> </footer>'
-    };
-});
-app.directive("myHeader", function () {
-    return {
-        template: '<header> <div class="bground"></div> <p class="header1"> Tarot Learning Website</p> <p class="header2"> Learning the way Universe messaging you</p> <div class="row no-margin"> <div class="nav-item col"> <a class="nav-link" href="#">Home</a> </div> <div class="nav-item col"> <a class="nav-link" href="#">Card List</a> </div> <div class="nav-item col"> <a class="nav-link" href="#">Flashcard</a> </div> <div class="nav-item col"> <a class="nav-link" href="#">Card Spread</a> </div> <div class="nav-item col"> <a class="nav-link" href="#">About</a> </div> </div> </header>'
-    };
+app.controller('myCtrl', function ($scope, $http) {
+    $http.get("cardData.json")
+        .then(function (response) {
+            const json = response.data
+            var carList = document.getElementById("cardList")
+            var toAdd = '<div class="row">';
+            for (var i = 0; i < json.length; i++) {
+                if (json[i].type !== 'major'){
+                    toAdd += '</div>'
+                    break;
+                } 
+                var link = json[i].name.toLowerCase().replaceAll(' ', '')
+                toAdd += `<div class="col"> <div class="cardHolder"> <a href="/${link}"><img class="cardofList" src="card/${json[i].img}"><div class="cardLink">${json[i].name}</div></a></div></div>`
+                if ((i+1)%6 == 0){
+                    toAdd += '</div> <div class="row">'
+                }                
+            }
+            carList.innerHTML = toAdd
+        });
 });

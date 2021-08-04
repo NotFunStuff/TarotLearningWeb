@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tarot Learning Website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel='stylesheet' href='css/common.css'>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <div ng-include="'header.html'"></div>
+    <div class="content row no-margin">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10 main-content">
+            <div class="bground"></div>
+            <h1 class="en">Major Arcana</h1>
+            <div class="en">
+                <h2>Meaning of All Major Arcanas cards</h2>
+                <p>The Major Arcana Tarot cards represent life lessons and major themes that are affecting life. The
+                    meaning of the Major Arcana card is very deep and complex and has many different interpretations
+                    (depending on the situation).</p>
+                <p>Also known as Trump Cards, the Major Arcana cards consist of 21 numbered cards and 1 unnumbered card
+                    (The Fool). The Fool is the protagonist of the Major Arcana and makes his journey through each card,
+                    meeting new people and learning new life lessons along the way, and finally completing the journey
+                    with the card. The World. This is called the Fool's Journey and is a great way to understand the
+                    storyline of the Major Arcana Tarot card's meaning.</p>
+                <h2>Meaning of one Major Arcanas card</h2>
+                <p> When you see the Major Arcana in your Tarot reading, you are being prompted to reflect on the
+                    lessons and themes of life at this time. The Major Arcana will usually be important cards and affect
+                    the entire Tarot spread and the surrounding cards will complement the Major Arcana.</p>
+                <h2>What if most of the cards spread are Major Arcana</h2>
+                <p>When in a Tarot spread mostly Major Arcana cards, you are experiencing significant life-changing
+                    events that will have lasting effects. This is when you will have important lessons that you need to
+                    heed for a better future.</p>
+            </div>
+            <div class="cardList" id="cardList">
+
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+    <div ng-include="'footer.html'"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+<script src="js/common.js"></script>
+
+</html>

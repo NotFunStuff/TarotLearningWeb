@@ -92,6 +92,15 @@ h1 {
     margin-top: 10px;
 }
 
+h2 {
+    color: rgb(180, 180, 39);    
+    font-weight: unset;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    padding: 10px;
+}
+
 .content p {
     color: #ffffff;
     font-size: 25px;
@@ -120,4 +129,21 @@ h1 {
 }
 .italic{
     font-style: italic;
+}
+.cardofList{
+    width: 192px;
+    height: 336px;
+}
+.cardHolder{
+    text-align: center;
+    margin: 10px;
+}
+.cardLink{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(180, 180, 39);
+    text-decoration: underline;
+}
+.cardLink:hover{
+    color: rgb(77, 77, 24);
 }
