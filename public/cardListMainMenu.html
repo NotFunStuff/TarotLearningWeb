@@ -42,8 +42,12 @@
                     10 cards, representing different situations we encounter on a daily basis.
                 </p>
                 <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-dark btn-lg card-list-btn">Major Arcana Card List</button>
-                    <button type="button" class="btn btn-dark btn-lg card-list-btn">Minor Arcana Card List</button>
+                    <a href="/major">
+                        <button type="button" class="btn btn-dark btn-lg card-list-btn">Major Arcana Card
+                            List</button></a>
+                    <a href="/minor">
+                        <button type="button" class="btn btn-dark btn-lg card-list-btn" href="/minor">Minor Arcana Card
+                            List</button></a>
                 </div>
                 <p>Some people may say that Tarot cards are simply pictures. However, what I have discovered from
                     reading Tarot cards daily over the past time is this:</p>
@@ -58,7 +62,7 @@
         </div>
         <div class="col-sm-1"></div>
     </div>
-    <div ng-include="'footer.html'"></div>
+    <div ng-include="'footer.html'" class="no-padding"></div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

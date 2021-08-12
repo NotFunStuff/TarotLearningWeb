@@ -11,7 +11,7 @@ app.controller('myCtrl', function ($scope, $http) {
                     break;
                 } 
                 var link = json[i].name.toLowerCase().replaceAll(' ', '')
-                toAdd += `<div class="col"> <div class="cardHolder"> <a href="/${link}"><img class="cardofList" src="card/${json[i].img}"><div class="cardLink">${json[i].name}</div></a></div></div>`
+                toAdd += `<div class="col"> <div class="cardHolder"> <a href="/card${json[i].cid}"><img class="cardofList" src="card/${json[i].img}"><div class="cardLink">${json[i].name}</div></a></div></div>`
                 if ((i+1)%6 == 0){
                     toAdd += '</div> <div class="row">'
                 }                

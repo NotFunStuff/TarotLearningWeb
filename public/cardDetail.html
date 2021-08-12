@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tarot Learning Website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel='stylesheet' href='css/common.css'>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <div ng-include="'header.html'"></div>
+    <div class="content row no-margin">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10 main-content">
+            <div class="bground"></div>
+
+            <div class="en">
+                <div class="upright">
+                    <h1>{name}</h1>
+                    <div>
+                        <div class="cardImage">
+                            <img src="card/{img}"></div>
+                        <h2>Description</h2>
+                        <p>{desc}</p>
+                        <h2>Upright Tarot Card Key Meanings:</h2>
+                        <div class="keywords">{keywords}</div>
+                        <h2>General Meaning and Interpretation (Upright)</h2>
+                        <p>{general}</p>
+                    </div>
+                    <h2>Love & Relationships (Upright)</h2>
+                    <p>{love}</p>
+                    <h2>Money & Career (Upright)</h2>
+                    <p>{career}</p>
+                    <h2>Health (Upright)</h2>
+                    <p>{health}</p>
+
+                </div>
+                <div class="reverse">
+                    <div>
+                        <div class="cardImageRe">
+                            <img src="card/{reImg}"></div>
+                        <h2>Reverse Tarot Card Key Meanings: <span class="keywords">{rekeywords}</span></h2>
+                        <h2>General Meaning and Interpretation (Reverse)</h2>
+                        <p>{regeneral}</p>
+                    </div>
+                    <h2>Love & Relationships (Reverse)</h2>
+                    <p>{relove}</p>
+                    <h2>Money & Career (Reverse)</h2>
+                    <p>{recareer}</p>
+                    <h2>Health (Reverse)</h2>
+                    <p>{rehealth}</p>
+                </div>
+
+                <div class="switchCard row">
+                    <div class="col-sm-3">
+                        <div class="cardHolder">
+                            <a href="/card{preCid}"><img class="cardofList" src="card/{preImg}">
+                                <div class="cardLink">Previous Card</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="/major">
+                            <button type="button" class="btn btn-dark col-12 fullwidth-btn">Major Arcana Card
+                                List</button></a></div>
+                    <div class="col-sm-3">
+                        <div class="cardHolder">
+                            <a href="/card{nextCid}"><img class="cardofList" src="card/{nextImg}">
+                                <div class="cardLink">Previous Card</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div ng-include="'footer.html'" class="no-padding"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+<script src="js/common.js"></script>
+
+</html>
